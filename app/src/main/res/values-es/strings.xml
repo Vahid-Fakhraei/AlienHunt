@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="auth_email_hint">Correo electrónico</string>
+    <string name="auth_password_hint">Contraseña</string>
+    <string name="auth_login_button">Iniciar sesión</string>
+    <string name="auth_register_button">Registrarse</string>
+    <string name="auth_forgot_button">¿Olvidaste tu contraseña?</string>
+    <string name="auth_repeat_password_hint">Repetir contraseña</string>
+    <string name="auth_conditions">Acepto los términos y condiciones</string>
+    <string name="auth_request_code_button">Enviar código de recuperación</string>
+    <string name="auth_code_hint">Código de 6 dígitos</string>
+    <string name="auth_verify_code_button">Verificar código</string>
+    <string name="auth_new_password_hint">Nueva contraseña</string>
+    <string name="auth_save_password_button">Guardar contraseña</string>
+    <string name="auth_required">Todos los campos son obligatorios</string>
+    <string name="auth_invalid_credentials">Correo o contraseña incorrectos</string>
+    <string name="auth_pending">Verifica tu correo y vuelve a iniciar sesión</string>
+    <string name="auth_expired">El enlace ha caducado. Regístrate de nuevo para reenviarlo</string>
+    <string name="auth_pending_retry">No se encontró la solicitud. Regístrate de nuevo para reenviarla</string>
+    <string name="auth_connection_error">No se puede conectar al servidor de AlienHunt</string>
+    <string name="auth_local_error">No se pudo actualizar la cuenta local</string>
+    <string name="auth_invalid_email">Introduce un correo válido</string>
+    <string name="auth_password_short">La contraseña debe tener al menos 8 caracteres</string>
+    <string name="auth_password_mismatch">Las contraseñas no coinciden</string>
+    <string name="auth_accept_conditions">Acepta las condiciones</string>
+    <string name="auth_user_exists">La cuenta ya existe o la contraseña pendiente es diferente</string>
+    <string name="auth_send_failed">No se pudo enviar el correo</string>
+    <string name="auth_rate_limit">Demasiadas solicitudes. Inténtalo más tarde</string>
+    <string name="auth_check_email">Correo enviado. Verifícalo y vuelve al inicio de sesión</string>
+    <string name="auth_account_not_available">Necesitas una cuenta verificada en este dispositivo</string>
+    <string name="auth_otp_sent">Si procede, se ha enviado un código de 6 dígitos</string>
+    <string name="auth_code_format">Introduce exactamente 6 dígitos</string>
+    <string name="auth_otp_invalid">Código incorrecto, caducado o sin intentos</string>
+    <string name="auth_reset_expired">La autorización ha caducado. Empieza de nuevo</string>
+    <string name="auth_password_updated">Contraseña cambiada correctamente</string>
+</resources>

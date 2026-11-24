@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <!-- Login (AlienHunt) -->
+    <color name="alien_blue">#00BFFF</color>
+    <color name="btn_backcolor">#2B5F92</color>
+
+    <!-- Juego (XenoHunt) -->
+    <color name="bg">#0D1117</color>
+    <color name="panel">#1F2937</color>
+    <color name="acid">#A6FF3D</color>
+    <color name="acid_ripple">#33A6FF3D</color>
+    <color name="text">#FFFFFF</color>
+    <color name="text_dim">#8B949E</color>
+</resources>

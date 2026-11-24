@@ -1,0 +1,39 @@
+*.iml
+.gradle
+/local.properties
+/.idea/caches
+/.idea/libraries
+/.idea/modules.xml
+/.idea/workspace.xml
+/.idea/navEditor.xml
+/.idea/assetWizardSettings.xml
+.DS_Store
+/build
+/captures
+.externalNativeBuild
+.cxx
+local.properties
+# Android build outputs
+**/build/
+
+# Local IDE files
+.idea/shelf/
+.idea/httpRequests/
+
+# Sensitive files
+*.jks
+*.keystore
+*.env
+.env.*
+google-services.json
+
+# Operating system
+Thumbs.db
+
+# Android Studio local project settings
+.idea/
+
+# Exclude the backend SQLite database and its files
+/backend/data/
+
+/backend/.env

@@ -1,0 +1,33 @@
+const assert=require('node:assert/strict');
+const crypto=require('node:crypto');
+const fs=require('node:fs');
+const os=require('node:os');
+const path=require('node:path');
+const dir=fs.mkdtempSync(path.join(os.tmpdir(),'alienhunt-auth-test-'));
+process.env.ALIENHUNT_DB_PATH=path.join(dir,'test.db');
+process.env.OTP_HMAC_KEY='a'.repeat(64); // TEST-ONLY KEY, never use in .env
+const db=require('../src/database/sqlite');
+const registration=require('../src/services/emailVerificationService');
+const otp=require('../src/services/otpService');
+const reg=registration.createVerificationRequest('Test@Example.com');
+assert.equal(registration.getVerificationStatus(reg.requestId,reg.clientSecret),'pending');
+assert.equal(registration.getVerificationStatus(reg.requestId,crypto.randomBytes(32).toString('hex')),'not_found');
+assert.equal(registration.verifyEmailToken(reg.token).email,'test@example.com');
+assert.equal(registration.verifyEmailToken(reg.token),null);
+assert.equal(registration.getVerificationStatus(reg.requestId,reg.clientSecret),'verified');
+assert.equal(registration.hasVerifiedEmail('test@example.com'),true);
+const issued=otp.issueOtp('test@example.com');
+assert.equal(issued.code.length,6);
+assert.equal(otp.verifyOtpAndIssueGrant(issued.requestId,'------'),null);
+const grant=otp.verifyOtpAndIssueGrant(issued.requestId,issued.code);
+assert.ok(grant.resetGrant);
+assert.equal(otp.verifyOtpAndIssueGrant(issued.requestId,issued.code),null);
+assert.equal(otp.consumeResetGrant(grant.resetGrant),'test@example.com');
+assert.equal(otp.consumeResetGrant(grant.resetGrant),null);
+const attempts=otp.issueOtp('test@example.com');
+for(let i=0;i<5;i++)assert.equal(otp.verifyOtpAndIssueGrant(attempts.requestId,
+  attempts.code==='000000'?'999999':'000000'),null);
+assert.equal(otp.verifyOtpAndIssueGrant(attempts.requestId,attempts.code),null);
+db.close();
+fs.rmSync(dir,{recursive:true,force:true});
+console.log('PASS: registration proof, single-use email, OTP, 5-attempt lock, one-time reset grant');

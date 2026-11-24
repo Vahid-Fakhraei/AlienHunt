@@ -1,0 +1,10 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- La app usa siempre un tema oscuro (login, menú, perfil y juego). -->
+    <style name="Base.Theme.AlienHunt" parent="Theme.Material3.Dark.NoActionBar">
+        <item name="colorPrimary">@color/acid</item>
+        <item name="colorOnPrimary">@color/bg</item>
+        <item name="android:windowBackground">@color/bg</item>
+    </style>
+
+    <style name="Theme.AlienHunt" parent="Base.Theme.AlienHunt" />
+</resources>

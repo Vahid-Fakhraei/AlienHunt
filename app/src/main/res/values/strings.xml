@@ -1,0 +1,86 @@
+<resources>
+    <string name="app_name">AlienHunt</string>
+    <string name="game_title">XENOHUNT</string>
+
+    <!-- Login -->
+    <string name="forgot_password"><u>¿Olvidaste tu contraseña?</u></string>
+
+    <!-- Menú -->
+    <string name="subtitle">ALIEN VS PREDATOR</string>
+    <string name="enter">ENTER</string>
+    <string name="cerrar_sesion">CERRAR SESIÓN</string>
+    <string name="status">PRESS START • READY</string>
+    <string name="status_bienvenida">WELCOME BACK, %1$s • READY</string>
+
+    <!-- Crear / editar perfil -->
+    <string name="crear_perfil">CREAR PERFIL</string>
+    <string name="editar_perfil">EDITAR PERFIL</string>
+    <string name="hint_nombre">Nombre de jugador</string>
+    <string name="elige_avatar">ELIGE TU AVATAR</string>
+    <string name="avatar_seleccionado">Avatar %1$d de %2$d</string>
+    <string name="btn_crear">CREAR PERFIL</string>
+    <string name="btn_guardar">GUARDAR CAMBIOS</string>
+    <string name="error_nombre_vacio">Escribe un nombre para tu perfil</string>
+    <string name="cd_avatar">Avatar</string>
+    <string name="btn_volver">VOLVER</string>
+    <string name="btn_volver_menu">VOLVER AL MENÚ</string>
+
+    <!-- Juego -->
+    <string name="perfil_activo">PERFIL ACTIVO</string>
+    <string name="btn_jugar">JUGAR</string>
+    <string name="btn_cambiar_perfil">CAMBIAR PERFIL</string>
+    <string name="msg_proximamente">Aquí comenzará la partida (pendiente de implementar)</string>
+
+    <!-- Términos y condiciones -->
+    <string name="terminos_titulo">TÉRMINOS Y CONDICIONES</string>
+    <string name="terminos_acepto">He leído y acepto los términos y condiciones</string>
+    <string name="btn_aceptar">ACEPTAR</string>
+    <string name="btn_rechazar">RECHAZAR</string>
+    <string name="terminos_texto">1. Uso del juego\nAlienHunt es un juego de entretenimiento. Al usarlo te comprometes a hacerlo de forma responsable y sin intentar alterar su funcionamiento.\n\n2. Cuenta y perfil\nEres responsable de mantener la confidencialidad de tus credenciales y de la actividad realizada desde tu cuenta. El nombre de jugador no debe ser ofensivo.\n\n3. Datos personales\nLa aplicación guarda en tu dispositivo únicamente los datos necesarios para funcionar, como el nombre de jugador y el avatar elegido. No se comparten con terceros.\n\n4. Propiedad intelectual\nLos gráficos, textos y demás contenidos del juego pertenecen a sus respectivos autores y no pueden copiarse ni redistribuirse sin permiso.\n\n5. Responsabilidad\nEl juego se ofrece tal cual, sin garantías de funcionamiento ininterrumpido. Los desarrolladores no se hacen responsables de pérdidas de datos o interrupciones del servicio.\n\n6. Cambios en los términos\nEstos términos pueden actualizarse. Si sigues usando la aplicación después de un cambio, se entiende que aceptas la nueva versión.</string>
+
+    <!-- Partida -->
+    <string name="btn_cuaderno">CUADERNO</string>
+    <string name="btn_reportar">REPORTAR CUERPO</string>
+    <string name="btn_emergencia">EMERGENCIA</string>
+    <string name="btn_hablar">HABLAR</string>
+    <string name="btn_saltar_voto">SALTAR VOTO</string>
+    <string name="mapa_ayuda">Toca una habitación para moverte</string>
+    <string name="reunion_titulo">REUNIÓN</string>
+    <string name="reunion_jugadores">Pregunta y vota a los jugadores vivos</string>
+    <string name="msg_nadie_cerca">No hay nadie contigo en esta habitación</string>
+
+    <!-- AlienHunt authentication screens: default English -->
+    <string name="auth_email_hint">Email address</string>
+    <string name="auth_password_hint">Password</string>
+    <string name="auth_login_button">Log in</string>
+    <string name="auth_register_button">Register</string>
+    <string name="auth_forgot_button">Forgot password?</string>
+    <string name="auth_repeat_password_hint">Repeat password</string>
+    <string name="auth_conditions">I agree to the terms and conditions</string>
+    <string name="auth_request_code_button">Send reset code</string>
+    <string name="auth_code_hint">6-digit verification code</string>
+    <string name="auth_verify_code_button">Verify code</string>
+    <string name="auth_new_password_hint">New password</string>
+    <string name="auth_save_password_button">Save new password</string>
+    <string name="auth_required">All fields are required</string>
+    <string name="auth_invalid_credentials">Invalid email or password</string>
+    <string name="auth_pending">Check your inbox and verify your email, then log in again</string>
+    <string name="auth_expired">Verification link expired. Register again to resend it</string>
+    <string name="auth_pending_retry">Verification request not found. Register again to resend it</string>
+    <string name="auth_connection_error">Cannot connect to AlienHunt server</string>
+    <string name="auth_local_error">Could not update local account</string>
+    <string name="auth_invalid_email">Enter a valid email address</string>
+    <string name="auth_password_short">Password must have at least 8 characters</string>
+    <string name="auth_password_mismatch">Passwords do not match</string>
+    <string name="auth_accept_conditions">Accept the terms first</string>
+    <string name="auth_user_exists">This account already exists or has a different pending password</string>
+    <string name="auth_send_failed">Email could not be sent</string>
+    <string name="auth_rate_limit">Too many requests. Try again later</string>
+    <string name="auth_check_email">Verification email sent. Verify it, then return to Login</string>
+    <string name="auth_account_not_available">A verified account is required on this device</string>
+    <string name="auth_otp_sent">If eligible, a 6-digit code was sent. Check your email</string>
+    <string name="auth_code_format">Enter exactly 6 digits</string>
+    <string name="auth_otp_invalid">Invalid, expired or exhausted code</string>
+    <string name="auth_reset_expired">Reset permission expired. Start the process again</string>
+    <string name="auth_password_updated">Password changed successfully</string>
+</resources>

@@ -1,0 +1,10 @@
+const express = require('express');
+const app = express();
+const routes = require('./src/routes/verificationRoutes');
+app.disable('x-powered-by');
+app.use(express.json({limit:'12kb'}));
+app.use(express.urlencoded({extended:false,limit:'12kb'}));
+app.use('/api/auth',routes);
+app.get('/api/health',(req,res)=>res.json({status:'OK',application:'AlienHunt'}));
+const PORT=Number(process.env.PORT||3000);
+app.listen(PORT,'127.0.0.1',()=>console.log('AlienHunt server is running on port '+PORT));
